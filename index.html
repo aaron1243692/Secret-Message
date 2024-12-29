@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="displaycontent">
+        <textarea id="inputmsg" placeholder="Enter your message here..."></textarea>
+    </div>
+
+    <div id="functioncontent">
+        <div class="functions">
+            <label>Keyword: <input type="text" id="keyword" placeholder="Enter keyword"></label>
+        </div>
+        <div class="functions">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+        </div>
+    </div>
+
+    <div class="displaycontent">
+        <textarea readonly id="outputmsg" placeholder="Output will appear here..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
